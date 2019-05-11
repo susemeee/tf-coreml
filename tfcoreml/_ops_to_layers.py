@@ -92,7 +92,7 @@ _NON_CORE_OPS = {
   'RandomStandardNormal': _layers.random, # TODO - CoreML not supporting random numbers
   'RandomUniform': _layers.random, # TODO - CoreML not supporting random numbers
 
-  # 'Shape': _layers.shape,
+  'Shape': _layers.shape,
   # 'Gather': _layers.gather,  # TODO- handled in a very limited setting
 
   # 'GreaterEqual' : _layers.greater, # TODO - need to handle it better
@@ -104,7 +104,7 @@ _NON_CORE_OPS = {
   # 'Assert': _layers.skip,
   # 'Equal': _layers.skip,
   # 'All': _layers.skip,
-  # 'Pack': _layers.skip,  # TODO - need to handle it better
+  'Pack': _layers.skip,  # TODO - need to handle it better
 }
 
 _OP_REGISTRY = dict(_CORE_OPS, **_NON_CORE_OPS)
