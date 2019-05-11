@@ -105,6 +105,7 @@ _NON_CORE_OPS = {
   # 'Equal': _layers.skip,
   # 'All': _layers.skip,
   'Pack': _layers.skip,  # TODO - need to handle it better
+  'Unpack': _layers.skip,
 }
 
 _OP_REGISTRY = dict(_CORE_OPS, **_NON_CORE_OPS)
